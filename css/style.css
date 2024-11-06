@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: gray;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todo-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo h1 {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.todo-app {
+  width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: aqua;
+  margin: 50px auto;
+}
+
+#form {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#form input {
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+#form button {
+  width: 18%;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(37, 209, 243);
+  border-radius: 9px;
+  &:hover {
+    background-color: rgb(44, 194, 194);
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+.todo-item {
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.todo-item span {
+  cursor: pointer;
+  color: blue;
+}
+
+#clear {
+  position: relative;
+  bottom: 40px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: burlywood;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(230, 130, 68);
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
